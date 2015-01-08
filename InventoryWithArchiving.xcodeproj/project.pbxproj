@@ -17,6 +17,8 @@
 		50116D281A47D2F500E9260B /* Inventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50116D271A47D2F500E9260B /* Inventory.swift */; };
 		50116D2A1A47D33100E9260B /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50116D291A47D33100E9260B /* Item.swift */; };
 		50116D2C1A47DD8E00E9260B /* functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50116D2B1A47DD8E00E9260B /* functions.swift */; };
+		5033D2F21A5CF872008DCF4A /* stars.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5033D2F11A5CF872008DCF4A /* stars.jpg */; };
+		50A7A1A71A5E2A1000B4EFEA /* nothing_to_see_here.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 50A7A1A61A5E2A1000B4EFEA /* nothing_to_see_here.jpg */; };
 		50CA2ED41A4A9C2F00B15140 /* Load.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CA2ED31A4A9C2F00B15140 /* Load.swift */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +47,8 @@
 		50116D271A47D2F500E9260B /* Inventory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Inventory.swift; sourceTree = "<group>"; };
 		50116D291A47D33100E9260B /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		50116D2B1A47DD8E00E9260B /* functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = functions.swift; sourceTree = "<group>"; };
+		5033D2F11A5CF872008DCF4A /* stars.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = stars.jpg; sourceTree = "<group>"; };
+		50A7A1A61A5E2A1000B4EFEA /* nothing_to_see_here.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nothing_to_see_here.jpg; sourceTree = "<group>"; };
 		50CA2ED31A4A9C2F00B15140 /* Load.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Load.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,6 +94,8 @@
 				50116D021A47CDBF00E9260B /* AppDelegate.swift */,
 				50116D071A47CDBF00E9260B /* ViewController.swift */,
 				50CA2ED31A4A9C2F00B15140 /* Load.swift */,
+				5033D2F11A5CF872008DCF4A /* stars.jpg */,
+				50A7A1A61A5E2A1000B4EFEA /* nothing_to_see_here.jpg */,
 				50116D2B1A47DD8E00E9260B /* functions.swift */,
 				50116D091A47CDBF00E9260B /* Main.storyboard */,
 				50116D271A47D2F500E9260B /* Inventory.swift */,
@@ -208,7 +214,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				50116D0B1A47CDBF00E9260B /* Main.storyboard in Resources */,
+				5033D2F21A5CF872008DCF4A /* stars.jpg in Resources */,
 				50116D101A47CDBF00E9260B /* LaunchScreen.xib in Resources */,
+				50A7A1A71A5E2A1000B4EFEA /* nothing_to_see_here.jpg in Resources */,
 				50116D0D1A47CDBF00E9260B /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

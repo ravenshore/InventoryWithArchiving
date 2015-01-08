@@ -268,9 +268,15 @@ extension ViewController {
     
     func addToInventory() {
     
-    (inventory.itemArray).append(newItem)
-        (inventory.lastViewedIndex) = 1
     
+        
+        if let newItemChecked = addNewItem() {
+            
+    println("item: \(newItemChecked)")
+    inventory.itemArray.append(newItemChecked)
+            
+        }
+     
     }
     
     
@@ -295,6 +301,10 @@ extension ViewController {
     }
     
     
+    
+    
+    // Validate Email
+    
     func validateEmail(email:String) -> Bool {
         
         let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}"
@@ -302,6 +312,15 @@ extension ViewController {
         let result = range != nil ? true : false
         return result
         
+    }
+    
+    
+    
+    // Close Keyboard on Return
+    func textFieldShouldReturn(textField: UITextField!) -> Bool // called when 'return' key pressed. return NO to ignore.
+    {
+        textField.resignFirstResponder()
+        return true;
     }
     
 }

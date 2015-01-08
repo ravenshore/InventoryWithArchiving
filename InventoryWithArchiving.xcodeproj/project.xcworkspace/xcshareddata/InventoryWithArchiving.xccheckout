@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>DD724AEB-EC4B-4F01-9DB1-2622EBE8DB42</string>
+	<key>IDESourceControlProjectName</key>
+	<string>InventoryWithArchiving</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>CD4567473C2F97810990399DF501703F9A2CD779</key>
+		<string>https://github.com/ravenshore/InventoryWithArchiving.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>InventoryWithArchiving.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>CD4567473C2F97810990399DF501703F9A2CD779</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/ravenshore/InventoryWithArchiving.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>CD4567473C2F97810990399DF501703F9A2CD779</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CD4567473C2F97810990399DF501703F9A2CD779</string>
+			<key>IDESourceControlWCCName</key>
+			<string>InventoryWithArchiving</string>
+		</dict>
+	</array>
+</dict>
+</plist>

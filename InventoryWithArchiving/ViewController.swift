@@ -26,7 +26,7 @@ let itemSavePath = fileInDocumentsDirectory("item.plist")
 var placeHolderString: String! = "Fill out the information"
 
 
-class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
     
     // declare entry points
     @IBOutlet var imageView: UIImageView!
@@ -37,6 +37,10 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     @IBOutlet var phoneText: UITextField!
     @IBOutlet var saveStatusText: UITextField!
     
+    
+    
+    
+    
     // declare global vars
     var newItem: Item!
     var existingItem: Item!
@@ -46,8 +50,35 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        loadInventory()
         
         
+        firstNameText.delegate = self
+        lastNameText.delegate = self
+        ageText.delegate = self
+        emailText.delegate = self
+        phoneText.delegate = self
+        
+        firstNameText.attributedPlaceholder = NSAttributedString(string: "First Name", attributes: [NSForegroundColorAttributeName : UIColor.orangeColor()])
+        lastNameText.attributedPlaceholder = NSAttributedString(string: "Last Name", attributes: [NSForegroundColorAttributeName : UIColor.orangeColor()])
+        ageText.attributedPlaceholder = NSAttributedString(string: "Age", attributes: [NSForegroundColorAttributeName : UIColor.orangeColor()])
+        emailText.attributedPlaceholder = NSAttributedString(string: "Valid Email", attributes: [NSForegroundColorAttributeName : UIColor.orangeColor()])
+        phoneText.attributedPlaceholder = NSAttributedString(string: "Phone Number", attributes: [NSForegroundColorAttributeName : UIColor.orangeColor()])
+        firstNameText.clearsOnBeginEditing = true
+        lastNameText.clearsOnBeginEditing = true
+        ageText.clearsOnBeginEditing = true
+        emailText.clearsOnBeginEditing = true
+        phoneText.clearsOnBeginEditing = true
+        firstNameText.clearsOnInsertion = true
+        
+        
+        
+        
+        
+        
+        //get the documents folder
+        
+        println("Documents Directory: \(documentsDirectory())")
         // Add a tap gesture to the imageview
         let tapGesture = UITapGestureRecognizer(target: self, action: Selector("handleTapGesture:"))
         imageView.addGestureRecognizer(tapGesture)
@@ -63,12 +94,21 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     // Saving Action
     @IBAction func saveButtonPressed(sender: AnyObject) {
         
-        //        saveInventory()
+        
+        
+       
+        
      
         if let newContact = addNewItem() {
            
             newItem = newContact
             saveItemToDisk(newItem, path: itemSavePath)
+            
+            // add item to the Inventory
+            addToInventory()
+            
+            // save item to the Inventory
+            saveInventory()
         }
     
         
